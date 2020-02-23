@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.3.61"
+    id("org.jlleitschuh.gradle.ktlint") version "9.2.1"
 }
 
 group = "org.example"
@@ -14,8 +15,6 @@ dependencies {
 
     testImplementation("io.kotlintest:kotlintest-runner-junit5:3.3.0")
     testImplementation("org.slf4j:slf4j-simple:1.7.26")
-
-
 }
 
 tasks.withType<Test> {
